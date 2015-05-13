@@ -1,4 +1,6 @@
 import org.junit.Test;
+import proyectocumple.Empleado
+import proyectocumple.EmpleadoService
 
 class TestEmpleado {
 
@@ -6,8 +8,17 @@ class TestEmpleado {
 
 	@Test
 	void TestbuscarCumpleaniero() {
-		def empleado = empleadoService.buscarCumpleanierosPorMesActual()
-		assert empleado == empleado
+
+		def today = new Date()
+
+		def empleado = new Empleado()
+		empleado.nombre = 'Carlos'
+		empleado.apellido = 'laffitte'
+		empleado.fechaCumple = today
+		empleado.save()
+
+		def empleadoFinal = empleadoService.buscarCumpleanierosPorMesActual()
+		assert empleadoFinal.fechaCumple.getMonth() == today.getMonth()
 	}
 
 }
