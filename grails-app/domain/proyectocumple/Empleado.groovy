@@ -9,7 +9,6 @@ class Empleado {
 //	String regaloDeCumpleanios
 	static hasMany = [regaloDeCumpleanios: Regalo]
 
-    static constraints = {
-    }
+    
 	
 }
