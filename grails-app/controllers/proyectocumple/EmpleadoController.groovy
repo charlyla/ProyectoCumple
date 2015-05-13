@@ -37,7 +37,6 @@ class EmpleadoController {
 
 		[empleado: empleado, mostrar: mostrar, añoRegalo: añoRegalo, añoActual: añoActual]
 
-	//	return new ModelAndView ('/proyectocumplevista/buscarRegalos', [idEmpleado: idEmpleado])
 
 	}
 
@@ -49,7 +48,6 @@ class EmpleadoController {
 
 		def empleado = empleadoService.guardarRegaloEnEmpleado(idEmpleado,idRegalo)
 		[empleado: empleado]
-	//	return new ModelAndView ('/proyectocumplevista/mostrarRegaloAsignado', [empleado: empleado])
 
 	}
 
