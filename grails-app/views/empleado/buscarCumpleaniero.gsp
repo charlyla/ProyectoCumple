@@ -72,6 +72,8 @@
 		<br>
 		<g:field type="submit" name="confirmar" value="Guardar" onclick="guardar();"/>
 	</g:form>
+
+	<td> <g:link controller="Login"  action="logout"> Logout </g:link>  </td> 
 </body>
 
 
