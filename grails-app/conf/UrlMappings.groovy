@@ -8,7 +8,8 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+   //     "/"(view:"/index")
+        "/"(view:"/empleado/buscarCumpleaniero")
         "500"(view:'/error')
 	}
 }
