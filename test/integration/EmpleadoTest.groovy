@@ -1,13 +1,13 @@
+import grails.test.GrailsUnitTestCase
 import org.junit.Test;
 import proyectocumple.Empleado
 import proyectocumple.EmpleadoService
 
-class TestEmpleado {
+class EmpleadoTest extends GrailsUnitTestCase {
 
 	EmpleadoService empleadoService
 
-	@Test
-	void TestbuscarCumpleaniero() {
+	void testbuscarCumpleaniero() {
 
 		def today = new Date()
 
@@ -21,20 +21,22 @@ class TestEmpleado {
 		assert empleadoFinal.fechaCumple.getMonth() == today.getMonth()
 	}
 
+	/*
 	@Test
 	void TestelegirRegalo() {
 		def empleado = Empleado.get(params.id)
 		assert empleado == empleado
-		//def añoActual = new Date().getYear()
-		//def regaloMesActual = empleado.regaloDeCumpleanios
+		def añoActual = new Date().getYear()
+		def regaloMesActual = empleado.regaloDeCumpleanios
 		
-		//def añoRegalo 
-		//def mostrar = true
+		def añoRegalo
+		def mostrar = true
 
-		//empleado.regaloDeCumpleanios.each() { 
-		//	añoRegalo = it.fechaDeAsignacion.getYear()
-		//	if ( añoRegalo == añoActual ){
-		//		mostrar= false
-		//	}
+		empleado.regaloDeCumpleanios.each() {
+			añoRegalo = it.fechaDeAsignacion.getYear()
+			if ( añoRegalo == añoActual ){
+				mostrar= false
+			}
 		}
-	}
+		*/
+}
