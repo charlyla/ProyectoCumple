@@ -2,7 +2,7 @@ import org.junit.Test;
 import proyectocumple.Empleado
 import proyectocumple.EmpleadoService
 
-class TestEmpleado {
+class EmpleadoTest {
 
 	EmpleadoService empleadoService
 
@@ -17,14 +17,15 @@ class TestEmpleado {
 		empleado.fechaCumple = today
 		empleado.save()
 
-		def empleadoFinal = empleadoService.buscarCumpleanierosPorMesActual()
+		def empleadoFinal = empleadoService.buscarCumpleanierosPorMesActual().getAt(0)
+
 		assert empleadoFinal.fechaCumple.getMonth() == today.getMonth()
 	}
 
 	@Test
 	void TestelegirRegalo() {
-		def empleado = Empleado.get(params.id)
-		assert empleado == empleado
+		//def empleado = Empleado.get(params.id)
+		//assert empleado == empleado
 		//def añoActual = new Date().getYear()
 		//def regaloMesActual = empleado.regaloDeCumpleanios
 		
