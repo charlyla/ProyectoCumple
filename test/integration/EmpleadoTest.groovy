@@ -17,7 +17,7 @@ class EmpleadoTest extends GrailsUnitTestCase {
 		empleado.fechaCumple = today
 		empleado.save()
 
-		def empleadoFinal = empleadoService.buscarCumpleanierosPorMesActual()
+		def empleadoFinal = empleadoService.buscarCumpleanierosPorMesActual().getAt(0)
 		assert empleadoFinal.fechaCumple.getMonth() == today.getMonth()
 	}
 
