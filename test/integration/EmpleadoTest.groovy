@@ -2,12 +2,11 @@ import org.junit.Test;
 import proyectocumple.Empleado
 import proyectocumple.EmpleadoService
 
-class EmpleadoTest {
+class EmpleadoTest extends GrailsUnitTestCase {
 
 	EmpleadoService empleadoService
 
-	@Test
-	void TestbuscarCumpleaniero() {
+	void testbuscarCumpleaniero() {
 
 		def today = new Date()
 
