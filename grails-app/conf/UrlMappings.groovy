@@ -9,7 +9,13 @@ class UrlMappings {
         }
 
    //     "/"(view:"/index")
-        "/"(view:"/empleado/buscarCumpleaniero")
+   //     "/"(view:"/empleado/buscarCumpleaniero")
+
+        "/" {
+            controller = "empleado"
+            action = "buscarCumpleaniero"
+        }
+
         "500"(view:'/error')
 	}
 }

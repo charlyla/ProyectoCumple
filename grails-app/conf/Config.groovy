@@ -125,15 +125,15 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'proyectocumple.Us
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'proyectocumple.UsuarioRol'
 grails.plugin.springsecurity.authority.className = 'proyectocumple.Rol'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                              ['permitAll'],
+	'/**/**/**/**/**':                              ['permitAll'],
     '/Empleado/**':                      ['ROLE_DEV'],
-    '/Empleado/buscarCumpleaniero':   ['ROLE_ADMIN', 'ROLE_USER', 'ROLE_DEV'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
-	'/assets/**':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll']
+  //  '/Empleado/buscarCumpleaniero':   ['ROLE_ADMIN', 'ROLE_USER', 'ROLE_DEV'],
+//	'/index':                         ['permitAll'],
+//	'/index.gsp':                     ['permitAll'],
+//	'/assets/**':                     ['permitAll'],
+//	'/**/js/**':                      ['permitAll'],
+//	'/**/css/**':                     ['permitAll'],
+//	'/**/images/**':                  ['permitAll'],
+//	'/**/favicon.ico':                ['permitAll']
 ]
 
