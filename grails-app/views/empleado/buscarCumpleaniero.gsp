@@ -73,6 +73,23 @@
 		<g:field type="submit" name="confirmar" value="Guardar" onclick="guardar();"/>
 	</g:form>
 
+
+<br><br>
+
+
+
+<label>Busqueda de Regalo</label>
+<br>
+<g:form url="[action:'TestHttpRequestController',controller:'TestHttpRequestController']" >
+
+	<label>Regalo:</label>
+	<g:field type="text" name="regalo"/>
+	<br>
+
+	<g:field type="submit" name="confirmarRegalo" value="Buscar"/>
+</g:form>
+
+
 	<td> <g:link controller="Login"  action="logout"> Logout </g:link>  </td> 
 </body>
 
@@ -106,6 +123,12 @@ function enviar(){
 		alert( "Request failed: " + textStatus );
 	});
 }
+
+
+function buscarRegalo(){
+	alert('buscarRegalo')
+}
+
 </script>
 </html>
 
